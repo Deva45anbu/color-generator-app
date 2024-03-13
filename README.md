@@ -73,6 +73,31 @@ npm start
 ```
 "bootstrap": "^4.6.0"
 ```
+## Key Components
+
+#### ColorGenerator:
+- This is the main component that orchestrates the color generation process. 
+- Manages the state, including search input, dominant color results, loading state, and error state.
+- Contains functions for generating color codes, loading images, converting RGB to hex, and clearing the search.
+- Renders the user interface, including the search input, buttons, loading spinner, error messages, and the display of dominant colors in a Masonry layout.
+
+#### Loader:
+
+- This is a utility component that displays a loading spinner when the application is fetching data or processing images.
+- It is likely located in the "Utils" directory and is used to provide visual feedback to the user during asynchronous operations.
+
+#### ResponsiveMasonry and Masonry:
+- These components are imported from the react-responsive-masonry library.
+- They are used to create a responsive Masonry layout for displaying dominant colors.
+- The ResponsiveMasonry component adjusts the number of columns based on screen width, and the Masonry component organizes the colored boxes.
+
+#### GoogleImageApiCall:
+- This is an external utility or API call function responsible for fetching image search results based on a provided search term, for more details refer this link [serpapi documentation](https://serpapi.com/google-images-api).
+
+#### ColorThief:
+
+- This component is imported from the colorthief library.
+- It is used to extract dominant colors from images loaded in the application.
 ## Authors
 
 - [@Deva45anbu](https://github.com/Deva45anbu)
