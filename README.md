@@ -1,70 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Color Generator App
 
-## Available Scripts
+The Color Generator is a web application built with React that allows users to dynamically generate dominant color codes based on a provided search term. It leverages the Google Image API to fetch related images and extracts the dominant colors from each image using the ColorThief library.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Color Code Generation:** Enter a search term, click the "Search" button, and see dynamically generated color palettes based on images related to the search term.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive Design:** The layout adjusts based on the screen width to provide a seamless experience across various devices.
 
-### `npm test`
+- **Loading and Error Handling:** A loading spinner indicates ongoing activity during color code generation, and error messages are displayed if there are issues with data fetching or image processing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Search Management:** Clear the search input and reset the displayed color palettes with the "Clear" button.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Install Node JS
+Refer to https://nodejs.org/en/ to install nodejs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+####  Cloning and Running the Application in local
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Clone the project into local
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/Deva45anbu/color-generator-app.git
+cd color-generator
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Install all the npm packages. Go into the project folder and type the following command to install all npm packages
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+- In order to run the application Type the following command
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Open your browser and visit http://localhost:3000 to see the Color Generator in action.
 
-### Code Splitting
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React:** A JavaScript library for building user interfaces.
 
-### Analyzing the Bundle Size
+```
+"react": "^17.0.2",
+"react-dom": "^17.0.2",
+"react-scripts": "4.0.3"
+```
+- **Axios:** A promise-based HTTP client for making requests to the Google Image API.
+```
+"axios": "^0.24.0"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+- **ColorThief:** A JavaScript library for extracting color palettes from images.
+```
+"colorthief": "^2.3.0"
+```
+- **React Responsive Masonry:** A responsive Masonry layout component for React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+"react-responsive-masonry": "^1.0.1"
+```
+- **Bootstrap:** A popular CSS framework for building responsive and mobile-first websites.
 
-### Advanced Configuration
+```
+"bootstrap": "^4.6.0"
+```
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [@Deva45anbu](https://github.com/Deva45anbu)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
