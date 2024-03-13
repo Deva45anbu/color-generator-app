@@ -86,7 +86,7 @@ npm start
 - This is a utility component that displays a loading spinner when the application is fetching data or processing images.
 - It is likely located in the "Utils" directory and is used to provide visual feedback to the user during asynchronous operations.
 
-#### ResponsiveMasonry and Masonry:
+#### Responsive Masonry:
 - These components are imported from the react-responsive-masonry library.
 - They are used to create a responsive Masonry layout for displaying dominant colors.
 - The ResponsiveMasonry component adjusts the number of columns based on screen width, and the Masonry component organizes the colored boxes.
